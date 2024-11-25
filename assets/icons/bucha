@@ -1,0 +1,76 @@
+import tkinter as tk
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import matplotlib.pyplot as plt
+from excel_utils import save_to_excel
+
+def create_modal_with_graph(root, data, title, xlabel, ylabel, unit):
+    modal = tk.Toplevel(root)
+    modal.title(title)
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    modal.geometry(f"{screen_width}x{screen_height}")
+    modal.configure(bg="#797979")
+
+    # Dividindo a janela em duas partes: gráfico e resultados
+    main_frame = tk.Frame(modal, bg="#797979")
+    main_frame.pack(fill=tk.BOTH, expand=True)
+
+    # Área do gráfico
+    graph_frame = tk.Frame(main_frame, bg="#797979")
+    graph_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+    fig, ax = plt.subplots(figsize=(6, 5))
+    ax.plot([d[0] for d in data], [d[1] for d in data], marker="o", label="Temperatura")
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid(True)
+    ax.legend()
+
+    canvas = FigureCanvasTkAgg(fig, master=graph_frame)
+    canvas_widget = canvas.get_tk_widget()
+    canvas_widget.pack(fill=tk.BOTH, expand=True)
+
+    # Área dos resultados
+    result_frame = tk.Frame(main_frame, bg="#797979")
+    result_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+    text_area = tk.Text(
+        result_frame,
+        height=20,
+        wrap=tk.WORD,
+        font=("Courier", 12),
+        bg="#797979",
+        fg="white"
+    )
+    text_area.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+
+    for x, y in data:
+        formatted_x = f"{x:.1f}"
+        text_area.insert(tk.END, f"{formatted_x} {unit}: {y}°C\n")
+
+    # Botões para salvar e fechar
+    button_frame = tk.Frame(modal, bg="#797979")
+    button_frame.pack(fill=tk.X, pady=10)
+
+    save_button = tk.Button(
+        button_frame,
+        text="Salvar em Excel",
+        command=lambda: save_to_excel(data, title),
+        bg="#008000",
+        fg="white",
+        font=("Arial", 10, "bold"),
+        relief="raised"
+    )
+    save_button.pack(side=tk.LEFT, padx=10)
+
+    close_button = tk.Button(
+        button_frame,
+        text="Fechar",
+        command=modal.destroy,
+        bg="#FF0000",
+        fg="white",
+        font=("Arial", 10, "bold"),
+        relief="raised"
+    )
+    close_button.pack(side=tk.LEFT, padx=10)
