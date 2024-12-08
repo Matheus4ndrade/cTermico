@@ -26,8 +26,8 @@ def calculate_equation(inputs):
     ]
 
     return {
-        "Heat Input (Ht)": int(Ht),
-        "Resultado de Adams": round(resultadoAdams, 2),
+        f"Valor de Y em {Tp}° é:": f"{round(resultadoAdams, 2)} mm",
+        "Heat Input (Ht)": f"{Ht} J/mm",
         "data_distancia": temperatura_distancia,
         "data_tempo": temperatura_tempo,
     }
