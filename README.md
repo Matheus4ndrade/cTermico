@@ -1,63 +1,55 @@
-# Software Ciclo Térmico e Heat Input
-Este projeto foi desenvolvido como parte do Trabalho de Graduação (TG) em Mecânica: Processos de Soldagem. Ele combina um software desktop escrito em Python e um aplicativo complementar  (disponível [neste repositório em formato APK](https://github.com/Matheus4ndrade/C_Termico)). Este repositório refere-se ao software que complementa o processo de análise térmica no contexto de soldagem.
-O objetivo principal deste software é fornecer uma ferramenta prática e acessível para cálculos térmicos e de parâmetros essenciais no processo de soldagem, utilizando equações específicas da área.
+# Software de Ciclo Térmico e Heat Input
+Este repositório apresenta o **Software de Ciclo Térmico e Heat Input**, desenvolvido como parte do **Trabalho de Graduação (TG) em Mecânica – Processos de Soldagem**. O software foi criado para auxiliar no cálculo e na análise de parâmetros térmicos utilizados na soldagem, com foco no **Heat Input** e no comportamento térmico do material durante o processo.
 
-## Objetivo
-O software foi projetado para:
+A aplicação funciona **totalmente offline** e foi pensada para ser simples, prática e acessível, atendendo tanto estudantes quanto profissionais da área de soldagem.
 
--   Realizar cálculos baseados em parâmetros como densidade, calor específico, velocidade de soldagem e outras variáveis.
--   Gerar gráficos de temperatura por distância e temperatura por tempo, essenciais para a análise do perfil térmico no material.
--   Auxiliar profissionais e estudantes da área de soldagem no planejamento e execução de processos mais eficientes.
+🔗 **Trabalho de Graduação (TG):**  
+http://ric-cps.eastus2.cloudapp.azure.com/handle/123456789/33293  
 
-## Importância para a Soldagem
-Nos processos de soldagem, o controle térmico é crucial para garantir a qualidade e resistência das juntas soldadas. Este software utiliza equações específicas que permitem:   
+🌐 **Site do projeto / Download:**  
+https://drillweld.netlify.app/
 
-- Determinar a distribuição de temperatura ao longo do material.
-- Calcular o Heat Input (Ht), um parâmetro essencial para prever a microestrutura final da solda.
-- Auxiliar na análise de viabilidade do processo com base nas propriedades do material e condições de operação.
+---
 
- A ferramenta torna mais prática a análise de variáveis que tradicionalmente demandam cálculos complexos, proporcionando uma interface amigável e intuitiva.
+## 🎯 Objetivo do Projeto
 
-## Funcionalidades
-- Entrada de dados: Insira os parâmetros do processo de soldagem.
-- Cálculo automático: Os valores necessários são calculados automaticamente após a inserção dos dados.
+O software tem como principais objetivos:
+- Apoiar a análise de processos de soldagem  
+- Facilitar o cálculo de parâmetros térmicos importantes  
+- Auxiliar no planejamento e ajuste de soldas  
+- Reduzir a necessidade de cálculos manuais extensos  
+
+---
+
+## 🔥 Importância na Soldagem
+O controle da energia térmica durante a soldagem é fundamental para garantir a qualidade da junta soldada. Uma aplicação inadequada de calor pode gerar defeitos, deformações e comprometer as propriedades mecânicas do material.
+
+Com o software é possível:
+- Avaliar a distribuição de temperatura ao longo do material  
+- Calcular o **Heat Input**, auxiliando na compreensão dos seus efeitos  
+- Apoiar a tomada de decisão na definição dos parâmetros de soldagem
+- 
+---
+
+## ⚙️ Funcionalidades
+- Inserção simples dos parâmetros do processo  
+- Cálculo automático do Heat Input  
+- Análise do comportamento térmico do material  
 - Geração de gráficos:
-    - Temperatura x Distância
-    - Temperatura x Tempo
-- Interface intuitiva para usuários de diversos níveis de experiência.
+  - Temperatura × Distância  
+  - Temperatura × Tempo  
+- Interface desktop simples e objetiva  
+- Funcionamento totalmente offline  
 
-## Como Usar
+---
 
-### Pré-requisitos
-- Python 3.6+: Certifique-se de que o Python está instalado no seu sistema.
-- Bibliotecas necessárias: Instale as dependências com o seguinte comando:
+## 📦 Distribuição e Uso
+O software é disponibilizado como **aplicação desktop**, podendo ser instalado diretamente no computador do usuário. Não é necessária conexão com a internet para o funcionamento.
 
-``` 
-pip install -r requirements.txt
-```
+🌐 https://drillweld.netlify.app/
 
-### Executando o Software
-#### Para executar o programa diretamente:
-1) Navegue até a pasta dist onde está localizado o arquivo Ciclo_Termico.exe.
+---
 
-2) Execute o programa clicando duas vezes no arquivo Ciclo_Termico.exe.
-
-#### Para executar o código no terminal:
-
-**1º** Clone este repositório:
-```
-git clone https://github.com/Matheus4ndrade/cTermico.git
-```
-
-**2º** Navegue até a pasta do projeto:
-```
-cd cTermico
-```
-
-**3º** Execute o software com o seguinte comando:
-```
-python main.py
-```
-
-# Autor
-Este projeto foi desenvolvido por Matheus Felipe Andrade Gomes como parte do Trabalho de Graduação em Mecânica: Processos de Soldagem.
+## 👤 Autor
+**Matheus Felipe Andrade Gomes**  
+Trabalho de Graduação em Mecânica – Processos de Soldagem
