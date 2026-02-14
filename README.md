@@ -3,15 +3,15 @@ Este repositório apresenta o **Software de Ciclo Térmico e Heat Input**, desen
 
 A aplicação funciona **totalmente offline** e foi pensada para ser simples, prática e acessível, atendendo tanto estudantes quanto profissionais da área de soldagem.
 
-🔗 **Trabalho de Graduação (TG):**  
+**Trabalho de Graduação (TG):**  
 http://ric-cps.eastus2.cloudapp.azure.com/handle/123456789/33293  
 
-🌐 **Site do projeto / Download:**  
+**Site do projeto / Download:**  
 https://drillweld.netlify.app/
 
 ---
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
 O software tem como principais objetivos:
 - Apoiar a análise de processos de soldagem  
@@ -21,7 +21,7 @@ O software tem como principais objetivos:
 
 ---
 
-## 🔥 Importância na Soldagem
+## Importância na Soldagem
 O controle da energia térmica durante a soldagem é fundamental para garantir a qualidade da junta soldada. Uma aplicação inadequada de calor pode gerar defeitos, deformações e comprometer as propriedades mecânicas do material.
 
 Com o software é possível:
@@ -31,7 +31,7 @@ Com o software é possível:
 - 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 - Inserção simples dos parâmetros do processo  
 - Cálculo automático do Heat Input  
 - Análise do comportamento térmico do material  
@@ -43,13 +43,14 @@ Com o software é possível:
 
 ---
 
-## 📦 Distribuição e Uso
+## Distribuição e Uso
 O software é disponibilizado como **aplicação desktop**, podendo ser instalado diretamente no computador do usuário. Não é necessária conexão com a internet para o funcionamento.
 
-🌐 https://drillweld.netlify.app/
+https://drillweld.netlify.app/
 
 ---
 
-## 👤 Autor
+## Autor
 **Matheus Felipe Andrade Gomes**  
 Trabalho de Graduação em Mecânica – Processos de Soldagem
+
